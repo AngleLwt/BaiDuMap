@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btn_location"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="定位"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_marker"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="覆盖物"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_location" />
+
+    <Button
+        android:id="@+id/btn_pio"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="pio检索"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_marker" />
+
+    <Button
+        android:id="@+id/bnt_guide"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="导航"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_pio" />
+
+    <Button
+        android:id="@+id/bnt_path"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="路径"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bnt_guide" />
+
+    <Button
+        android:id="@+id/bnt_serach"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="搜索"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bnt_path" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
